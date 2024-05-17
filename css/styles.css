@@ -1,0 +1,45 @@
+/*  КАСТОМНІ ВЛАСТИВОСТІ, СSS змінні, якщо використовуємо саме root, колір вказаний в змінній буде доступний у всій ієрархії мого документа HTML */
+:root{
+    --primary-text-color: #000000;
+    --accent-color: #FF6600;
+    --background-color: #AFAFAF;
+    --secondary-color: #FFFFFF;
+}
+
+.pages {
+color: #000000;
+background-color: var(--background-color);}
+
+/* Колір основного шрифтк #000000*/
+/* вторичні кольори тексту, wite #ffffff */
+/* акцент FF6600 */
+/* Коли треба прибрати крапочки у ненцмерованог списку ми можемо використовувати додатковий клас .list для прикладу і потім його додавати туди де треба прибрати крапочки, а не всі на сторінці */
+.list{
+    list-style: none;
+}
+/*  site-nav */
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-c0lor);
+}
+/* майже завджи на лендосах секції однакові: колір заголовку,колір тексту, колір опису однакові, тому можна примняти утилітний клас section, який описує однакові стилі контенту у всіх секціях*/
+.section-title{
+    color: var(--primary-text-color);
+}
+.services > .section-title{
+    color: var(--secondary-color);
+}
+/* у даному селекторі більша специфічність і білтй колір перебє чорний, якщо додаємо дитину, то обовяязково додаємо і батька */
+.primary {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border: transparent;
+}
+.secondary {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    border: transparent;
+}
