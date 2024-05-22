@@ -25,6 +25,10 @@ background-color: var(--background-color);}
 .site-nav .link:focus {
     color: var(--accent-c0lor);
 }
+/* у навігації можна підсвічувати сторінку, на якій саме зараз знаходиться відвідувач. 
+.site-nav .link.current {
+color: var(--accent-color);
+} використовуємо для багатосторінкових сайтів*/
 /* майже завджи на лендосах секції однакові: колір заголовку,колір тексту, колір опису однакові, тому можна примняти утилітний клас section, який описує однакові стилі контенту у всіх секціях*/
 .section-title{
     color: var(--primary-text-color);
@@ -33,13 +37,17 @@ background-color: var(--background-color);}
     color: var(--secondary-color);
 }
 /* у даному селекторі більша специфічність і білтй колір перебє чорний, якщо додаємо дитину, то обовяязково додаємо і батька */
-.primary {
-    color: var(--secondary-color);
-    background-color: var(--accent-color);
+
+.btn{
     border: transparent;
 }
-.secondary {
+.btn-primary {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    
+}
+.btn-secondary {
     color: var(--accent-color);
     background-color: var(--secondary-color);
-    border: transparent;
+    
 }
