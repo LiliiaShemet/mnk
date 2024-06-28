@@ -22,10 +22,13 @@ content="..." , де значення — це короткий опис вмі�
       MALOWANIE PROSZKOWE I PIASKOWANIE W TYCHACH <!--до 60 символів-->
       <!-- Спочатку нормалізатор, щоб у всіх браузерах відображалася однаково сторінка -->
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet"> -->
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"> -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="pages">
@@ -51,17 +54,20 @@ content="..." , де значення — це короткий опис вмі�
     <main>
       <section class="section">
         <h1 class="section-title"> 
-          MALOWANIE PROSZKOWE RÓŻNEGO TYPU POWIERZCHNI I PIASKOWANIE W TYCHACH
+          <span class="section-title-text">MALOWANIE PROSZKOWE </span><br/> RÓŻNEGO TYPU POWIERZCHNI I <br> <span class="section-title-text">PIASKOWANIE</span> W TYCHACH
         </h1>
         <div>
 
         <!-- <pre>  тег, позначає преформатований текст, браузер відображає саме так на сторінці, як він написаний в Htmlфайлі-->
-        <p>
-          Wymiary pieca: <br />12 × 2,6 × 2,5 m <br />
-          (Długość x szerokość x wysokość) <br />Wymiary komory <br />
-          do piaskowania: <br />
-          10 × 3 × 4 m <br />(Długość x szerokość x wysokość)
-        </p>
+        <p class="text">
+          Wymiary pieca: </p>
+          <p class="text-number">2 × 2,6 × 2,5 m  </p>
+          <p class="text-second"> (Długość x szerokość x wysokość)</p> 
+          <p class="text">Wymiary komory</p>
+          <p class="text">do piaskowania: </p>
+          <p class="text-number">10 × 3 × 4 m </p>
+          <p class="text-second">(Długość x szerokość x wysokość)</p>
+        
         </div>
         <button type="button" class="btn btn-secondary">Czytać więcej</button>
 
@@ -75,8 +81,8 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Największy piec</h3>
-            <p>
+            <h3 class="text-number">Największy piec</h3>
+            <p class="text">
               W Tychach mamy największy piec do polimeryzacji farby
               o rozmiarach: 12 × 2,6 × 2,5 m.
             </p>
@@ -89,8 +95,8 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Piaskowanie</h3>
-            <p>
+            <h3 class="text-number">Piaskowanie</h3>
+            <p class="text">
               Wymiary komory do piaskowania: 10 × 3 × 4 m. Piaskowanie
               wykonujemy stacjonarnie lub na wyjeździe.
             </p>
@@ -103,8 +109,8 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Duży wybór farb</h3>
-            <p>
+            <h3 class="text-number">Duży wybór farb</h3>
+            <p class="text">
               Malujemy farbami proszkowymi we wszystkich kolorach palety RAL,
               która zawiera ponad 1600 kolorów.
             </p>
@@ -117,8 +123,8 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Dostawa gratis</h3>
-            <p>
+            <h3 class="text-number">Dostawa gratis</h3>
+            <p class="text">
               Odbierzemy i zwrócimy już pomalowany sprzęt  w wyznaczone miejsce
               za własny koszt do 50 km od Tych.
             </p>
@@ -136,18 +142,26 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Malowanie proszkowe</h3>
-            <p>
-              Malowanie proszkowe to skuteczna metoda pozwalająca uzyskać
-              trwałą, odporną na czynniki zewnętrzne (ekstremalne temperatury,
-              agresywne środowisko i promieniowanie ultrafioletowe) i wytrzymałą
-              powłokę warstwy ochronnej i dekoracyjnej. Wymiary naszego pieca do
-              polimeryzacji farby:długość — 12 m; szerokość — 2,6 m; wysokość —
-              2,5 m.W ten sposób można pomalować:Konstrukcje regałowe;Sprzęt
-              AGD;Meble biurowe;Akcesoria ogrodnicze;Akcesoria
-              samochodowe;Profile metalowe różnego rodzaju;Bramy i tak
-              dalej.Cena od 280 zl / m²
+            <h3 class="text-number"> Malowanie proszkowe</h3>
+            <p class="text">
+              Malowanie proszkowe to skuteczna metoda pozwalająca uzyskać trwałą, odporną na czynniki zewnętrzne (ekstremalne temperatury, agresywne środowisko i promieniowanie ultrafioletowe) i wytrzymałą powłokę warstwy ochronnej i dekoracyjnej.
             </p>
+            <p>Wymiary naszego pieca do polimeryzacji farby:</p>
+            <b>długość — 12 m;
+              szerokość — 2,6 m;
+              wysokość — 2,5 m. </b>
+              <p>W ten sposób można pomalować:</p>
+              <p>Konstrukcje regałowe;
+                Sprzęt AGD;
+                Meble biurowe;
+                Akcesoria ogrodnicze;
+                Akcesoria samochodowe;
+                Profile metalowe różnego rodzaju;
+                Bramy i tak dalej.
+              </p>
+              <p>
+                Cena od 280 zl / m²
+              </p>
             <button type="button" class="btn btn-primary">Konsultacja</button>
           </li>
           <li>
@@ -163,18 +177,23 @@ content="..." , де значення — це короткий опис вмі�
               width="288"
               height="132"
             />
-            <h3>Piaskowanie</h3>
-            <p>
-              Malowanie proszkowe to skuteczna metoda pozwalająca uzyskać
-              trwałą, odporną na czynniki zewnętrzne (ekstremalne temperatury,
-              agresywne środowisko i promieniowanie ultrafioletowe) i wytrzymałą
-              powłokę warstwy ochronnej i dekoracyjnej.Wymiary naszego pieca do
-              polimeryzacji farby:długość — 12 m; szerokość — 2,6 m; wysokość —
-              2,5 m.W ten sposób można pomalować:Konstrukcje regałowe;Sprzęt
-              AGD;Meble biurowe;Akcesoria ogrodnicze;Akcesoria
-              samochodowe;Profile metalowe różnego rodzaju;Bramy i tak
-              dalej.Cena od 280 zl / m²
+            <h3 class="text-number">Piaskowanie</h3>
+            <p class="text">
+              Piaskowanie jest jedną z najskuteczniejszych metod obróbki powierzchni, która służy do usunięcia rdzy i starej warstwy farby/lakieru. Dużą zaletą tego typu obróbki jest możliwość dotarcia do trudno dostępnych rogów lub zakrzywień. W naszej firmie piaskowanie można wykonać na dwa sposoby:
+            </p> 
+            <p class="text">Stacjonarna obróbka wyrobu w komorze do piaskowania o wymiarach:
+              <b>długość — 10 m;
+                szerokość — 3 m;
+                wysokość — 4 m.</b> 
+            </p> 
+            <p class="text">
+              Piaskowanie wyjazdowe, oznacza to, że nasi pracownicy przyjadą do Ciebie w wyznaczone miejsce i w wyznaczonym terminie z przenośną piaskarką i obrobią potrzebną Ci powierzchnię.
             </p>
+            <p class="text-number">
+              Cena 
+od 280 zl / m²
+            </p>
+            
             <button type="button" class="btn btn-primary">Konsultacja</button>
           </li>
         </ul>
@@ -182,7 +201,7 @@ content="..." , де значення — це короткий опис вмі�
 
       <section class="section"> 
         <!-- Логоип текстовий, а під нм інлайнові svg, що ведуть н соціальні мережі -->
-        <a href="./index.html">MNK KOLER</a>
+        <a href="./index.html" ><span class="logo-text">MNK KOLER</span></a>
         <ul>
           <li> <a href="" aria-label="Facebook link">Facebook</a></li>
           <li> <a href="" aria-label="Twitter link">Twitter</a></li>
@@ -190,8 +209,8 @@ content="..." , де значення — це короткий опис вмі�
           <li> <a href="" aria-label="LinkedIn">LinkedIn</a></li>
         </ul>
         <!-- Пізніше замінимо підписи на іконки-значки соціальних мереж -->
-        <h2 id="o_nas">O NAS</h2>
-        <p>
+        <h2 id="o_nas" class="section-title">O NAS</h2>
+        <p class="text">
           Firma MNK-KOLER świadczy usługi piaskowania i malowania proszkowego
           różnego rodzaju powierzchni. Nasi specjaliści są gotowi omówić
           z Państwem indywidualne warunki cenowe, pomóc w organizacji dostawy
@@ -216,10 +235,10 @@ content="..." , де значення — це короткий опис вмі�
           <img src="./images/logo1.svg" alt="logo" />
         </a>
         <nav>
-          <ul>
-            <li><a href="#usługi"> Usługi </a></li>
-            <li><a href="#o_nas"> O nas </a></li>
-            <li><a href="#kontakt"> Kontakt </a></li>
+          <ul class="site-nav">
+            <li><a href="#usługi" class="link"> Usługi </a></li>
+            <li><a href="#o_nas" class="link"> O nas </a></li>
+            <li><a href="#kontakt" class="link"> Kontakt </a></li>
           </ul>
         </nav>
       </div>
@@ -235,7 +254,7 @@ content="..." , де значення — це короткий опис вмі�
         ></iframe>
       </div>
       <div>
-        <h2 id="kontakt">Kontakt do nas</h2>
+        <h2 id="kontakt" class="section-title">Kontakt do nas</h2>
         <address>
           <a href="tel:+48662056715">+48 662 056 715</a><br />
           <a href="tel:+48789837595">+48 789 837 595</a><br />
