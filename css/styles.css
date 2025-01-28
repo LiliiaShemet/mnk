@@ -14,7 +14,12 @@
     --secondary-color: #FFFFFF;
     
 }
+body {
+    font-family: 'Helvetica Neue', 'Roboto', 'Verdana', sans-serif;
+  } /*Властивість font-family успадковується більшістю елементів, тому його задають елементу body.*/
 
+
+  
 .pages {
 color: var(--primary-text-color);
 background-color: var(--background-color);
