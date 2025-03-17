@@ -15,28 +15,34 @@ content="..." , де значення — це короткий опис вмі�
     </title>
     <!-- Спочатку нормалізатор, щоб у всіх браузерах відображалася однаково сторінка -->
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> <!--Для кросбраузнестості икористовувати готову бібліотеку Modern Normalize, яка надає готовий файл стилів із нормалізацією. Все, що потрібно зробити, — це підключити цей файл стилів перед усіма вашими стилями. Потім у терміналі проєкту ввести команду  npm install modern-normalize-->
-    <!-- Потім ваші стилі -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    
 <!-- Додавання  шрифта -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">     <link rel="stylesheet" href="./css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+ rel="stylesheet">
+         
+   <!-- Потім ваші стилі -->
+   <link rel="stylesheet" href="./css/styles.css" /> 
     
   </head>
   <body class="pages">
     <header>
       <!--Логотип, навігація, кнопка-->
       <a href="./index.html">
-        <img src="./images/logo1.svg" alt="logo" />
+        <img src="./images/logo.png" 
+        width="148"
+        height="148"
+        alt="logo" />
       </a>
       <nav>
-        <ul class="site-nav">
-          <li><a href="#usługi" class="link"> Usługi </a></li>
-          <li><a href="#o_nas" class="link"> O nas </a></li>
-          <li><a href="#kontakt" class="link"> Kontakt </a></li>
-          <li><a href="./wireframes.html" class="link">Wireframes</a></li> <!--рекламний банер, реклама -->
+        <ul class="nav">
+          <li><a href="#usługi" class="nav-link"> Usługi </a></li>
+          <li><a href="#o_nas" class="nav-link"> O nas </a></li>
+          <li><a href="#kontakt" class="nav-link"> Kontakt </a></li>
+          <li><a href="./wireframes.html" class="nav-link">Wireframes</a></li> <!--рекламний банер, реклама -->
         </ul>
-        <button type="button" class="btn btn-primary">Konsultacja</button>
+        <button type="button" class="btn">Konsultacja</button>
       </nav>
       <!-- кнопку, при натисканні на яку надалі відкриватиметься форма,
          де користувач може залишити свій номер і йому передзвонить менеджер. -->
@@ -46,170 +52,190 @@ content="..." , де значення — це короткий опис вмі�
     <main>
       <section class="section">
         <h1 class="section-title"> 
-          <span class="accent">MALOWANIE PROSZKOWE <br/> RÓŻNEGO TYPU POWIERZCHNI I <br> PIASKOWANIE </span>w TYCHACH
+          <span class="accent">Malowanie proszkowe<br/>Piaskowanie <br/> Cięcie plazmowe <br/> Prace spawalnicze</span> w Tychach
         </h1>
         <div>
-
         <!-- <pre>  тег, позначає преформатований текст, браузер відображає саме так на сторінці, як він написаний в Htmlфайлі-->
         <p class="text">
           Wymiary pieca: </p>
-          <p class="text-number">2 × 2,6 × 2,5 m  </p>
+          <p class="text-number">10 &#215; 2 &#215; 2 m  </p>
           <p class="text-second"> (Długość x szerokość x wysokość)</p> 
           <p class="text">Wymiary komory</p>
-          <p class="text">do piaskowania: </p>
-          <p class="text-number">10 × 3 × 4 m </p>
+          <p class="text">do piaskowania: </p>
+          <p class="text-number">12 &#215; 4 &#215; 3 m </p>
           <p class="text-second">(Długość x szerokość x wysokość)</p>
-        
         </div>
-        <button type="button" class="btn btn-secondary">Czytać więcej</button>
-
         <h2>Zalety</h2>
         <!--Advantages переваги.Заголовок який треба приховати-->
-        <ul>
+        <ul class="advantages">
           <li>
             <img
-              src="./images/advantages/advantage1.jpg"
+              src="./images/oven.jpg"
               alt="Największy piec"
               width="288"
               height="132"
             />
-            <h3 class="text-number">Największy piec</h3>
+            <h3 class="subtitle">Największy piec</h3>
             <p class="text">
-              W Tychach mamy największy piec do polimeryzacji farby
-              o rozmiarach: 12 × 2,6 × 2,5 m.
+              W Tychach mamy największy piec do polimeryzacji
+               farby o rozmiarach: 10 &#215; 2 &#215; 2 m.
+              
             </p>
           </li>
 
           <li>
             <img
-              src="./images/advantages/advantage2.jpg"
-              alt=""
+              src="./images/sandblasting.jpg"
+              alt="Piaskowanie"
               width="288"
               height="132"
             />
-            <h3 class="text-number">Piaskowanie</h3>
+            <h3 class="subtitle">Piaskowanie</h3>
             <p class="text">
-              Wymiary komory do piaskowania: 10 × 3 × 4 m. Piaskowanie
-              wykonujemy stacjonarnie lub na wyjeździe.
+              Wymiary komory do piaskowania: 12 &#215; 4 &#215; 3 m. Piaskowanie
+              wykonujemy stacjonarnie lub na wyjeździe.
             </p>
           </li>
 
           <li>
             <img
-              src="./images/advantages/advantage3.jpg"
-              alt=""
+              src="./images/plasma.jpg"
+              alt="Cięcie plazmowe"
               width="288"
               height="132"
             />
-            <h3 class="text-number">Duży wybór farb</h3>
+            <h3 class="subtitle">Cięcie plazmowe</h3>
             <p class="text">
-              Malujemy farbami proszkowymi we wszystkich kolorach palety RAL,
-              która zawiera ponad 1600 kolorów.
+              Wymiary przecinarki plazmowej: 3 m długość, 2 m szerokość. Szerokość cięcia do 50 mm.
             </p>
           </li>
 
           <li>
             <img
-              src="./images/advantages/advantage4.jpg"
-              alt=""
+              src="./images/delivery.jpg"
+              alt="Dostawa gratis"
               width="288"
               height="132"
             />
-            <h3 class="text-number">Dostawa gratis</h3>
+            <h3 class="subtitle">Dostawa gratis</h3>
             <p class="text">
-              Odbierzemy i zwrócimy już pomalowany sprzęt  w wyznaczone miejsce
-              za własny koszt do 50 km od Tych.
+              Odbierzemy i zwrócimy już pomalowany sprzęt w wyznaczone miejsce
+              za własny koszt do 50 km od Tych.
             </p>
           </li>
         </ul>
       </section>
 
-      <section class=" section services">
+      <section class="services">
         <h2 id="usługi" class="section-title">Usługi</h2>
+        <p class="services-text">* Wszystkie usługi świadczymy zarówno stacjonarnie jak i na wyjeździe.</p>
         <ul>
           <li>
             <img
-              src="./images/services/malowanie_proszkowe.jpg"
-              alt=""
-              width="288"
-              height="132"
+              src="images/powder.jpg"
+              alt="Malowanie proszkowe"
+              width="393"
+              height="180"
             />
-            <h3 class="text-number"> Malowanie proszkowe</h3>
-            <p class="text">
-              Malowanie proszkowe to skuteczna metoda pozwalająca uzyskać trwałą, odporną na czynniki zewnętrzne (ekstremalne temperatury, agresywne środowisko i promieniowanie ultrafioletowe) i wytrzymałą powłokę warstwy ochronnej i dekoracyjnej.
+            <h3 class=""> Malowanie proszkowe</h3>
+            <p class="">
+              Tylko u nas znajdziecie piec o rozmiarach:
             </p>
-            <p>Wymiary naszego pieca do polimeryzacji farby:</p>
-            <b>długość — 12 m;
-              szerokość — 2,6 m;
-              wysokość — 2,5 m. </b>
-              <p>W ten sposób można pomalować:</p>
-              <p>Konstrukcje regałowe;
-                Sprzęt AGD;
-                Meble biurowe;
-                Akcesoria ogrodnicze;
-                Akcesoria samochodowe;
-                Profile metalowe różnego rodzaju;
-                Bramy i tak dalej.
-              </p>
-              <p>
-                Cena od 280 zl / m²
+            <p> <b>długość — 10 m;
+              szerokość — 2 m;
+              wysokość — 2 m.</b> </p>
+            
+             <p>Za pomocą takiego sprzętu możemy pomalować niemal wszystko, zarówno ozdobne butelki na perfumy i zestawy meblowe, jak i całą ceramikę. 
+
+
+              Tylko my możemy przyjechać na miejsce i na miejscu wykonać nasze prace. Przykładowo, istnieją stare parki, płoty, bramy czy pomniki, których nie da się rozebrać, budujemy piec pod wymiar tego modelu i wykonujemy tego typu prace.
+          
+              
+              Nie możemy zapominać, że w katalogu znajduje się <b> ponad 5000 kolorów </b> i odcieni farb na każdy gust. A my jako pierwsi wyjeżdżamy z taką wiedzą i możliwościami.</p>
+              <p class="prace">
+                Cena od 200 zł / m²
               </p>
             <button type="button" class="btn btn-primary">Konsultacja</button>
           </li>
           <li>
             <img
-              src="./images/services/piaskowanie1.jpg"
-              alt=""
-              width="288"
-              height="132"
+              src="./images/Sandblastin.jpg"
+              alt="Piaskowanie"
+              width="393"
+              height="180"
             />
-            <img
-              src="./images/services/piaskowanie2.jpg"
-              alt=""
-              width="288"
-              height="132"
-            />
-            <h3 class="text-number">Piaskowanie</h3>
-            <p class="text">
-              Piaskowanie jest jedną z najskuteczniejszych metod obróbki powierzchni, która służy do usunięcia rdzy i starej warstwy farby/lakieru. Dużą zaletą tego typu obróbki jest możliwość dotarcia do trudno dostępnych rogów lub zakrzywień. W naszej firmie piaskowanie można wykonać na dwa sposoby:
+            <h3 class="">Piaskowanie</h3>
+            <p class="">
+              Tylko my mamy do tego największe pomieszczenie do piaskowania.
             </p> 
-            <p class="text">Stacjonarna obróbka wyrobu w komorze do piaskowania o wymiarach:
-              <b>długość — 10 m;
-                szerokość — 3 m;
-                wysokość — 4 m.</b> 
-            </p> 
-            <p class="text">
-              Piaskowanie wyjazdowe, oznacza to, że nasi pracownicy przyjadą do Ciebie w wyznaczone miejsce i w wyznaczonym terminie z przenośną piaskarką i obrobią potrzebną Ci powierzchnię.
+            <p class=""> &#8226; Stacjonarna obróbka wyrobu w komorze do piaskowania o wymiarach:
+              <b>długość — 12 m;
+              szerokość — 4 m;
+              wysokość — 3 m.</b> 
             </p>
-            <p class="text-number">
-              Cena 
-od 280 zl / m²
+            <p class=""> &#8226;
+              Zajmujemy się szronieniem szkła przeznaczonego do dekoracji i aranżacji wnętrz 
+              oraz renowacji wszelkich mebli antycznych i zardzewiałych elementów. 
+              Także jest możliwe piaskowanie na wyjeździe: mosty,
+               domy drewniane i murowane, beton, a także renowację budynków po pożarze.
+            </p>
+            <p class="prace">
+              Cena od 150 zł / m²
             </p>
             
             <button type="button" class="btn btn-primary">Konsultacja</button>
           </li>
+          <li>
+            <img
+              src="./images/plasma.jpg"
+              alt="Cięcie plazmowe"
+              width="393"
+              height="180"
+            />
+            <h3 class="">Cięcie plazmowe</h3>
+            <p class="">
+              Cięcie plazmowe - i tutaj nie jesteśmy daleko w tyle, tniemy metal do 50 mm.
+            </p> 
+            <p class="">Wymiary przecinarki plazmowej:
+              <b>ddługość — 3 m;
+                szerokość — 2 m.</b> 
+            </p> 
+            <p class="">
+              Ta możliwość pozwoli na
+               umieszczenie wszystkich standardowych i niestandardowych konstrukcji metalowych.
+            </p>
+            <p>Zalety cięcia plazmowego:</p>
+            <p class=""> &#8226;Cięcie plazmowe jest uniwersalne dla większości metali;
+              &#8226;Cięcie wszystkich rodzajów metali (aluminium, miedź, tytan, stal nierdzewna, stal itp.);
+              &#8226; Wysoka jakość cięcia metalu.
+            </p>
+            <p class="prace">Cena od 100 zł / m²</p>
+            <button type="button" class="btn btn-primary">Konsultacja</button>
+          </li>
         </ul>
       </section>
 
-      <section class="section"> 
-        <!-- Логоип текстовий, а під нм інлайнові svg, що ведуть н соціальні мережі -->
-        <a href="./index.html" ><span class="logo-text">Mnk Koler</span></a>
+      <section class="desc"> 
+        <!-- Логоип текстовий, а під нм інлайнові svg, що ведуть н соціальні мережі 
+        <a href="./index.html" ><span class="logo-text nav" >mikol</span></a>
         <ul>
           <li> <a href="" aria-label="Facebook link">Facebook</a></li>
           <li> <a href="" aria-label="Twitter link">Twitter</a></li>
           <li> <a href="" aria-label="Instagram link">Instagram </a></li>
           <li> <a href="" aria-label="LinkedIn">LinkedIn</a></li>
         </ul>
-        <!-- Пізніше замінимо підписи на іконки-значки соціальних мереж -->
-        <h2 id="o_nas" class="section-title">O NAS</h2>
+        Пізніше замінимо підписи на іконки-значки соціальних мереж -->
+        <h2 id="o_nas" class="section-title">O nas</h2>
         <p class="text">
-          Firma MNK-KOLER świadczy usługi piaskowania i malowania proszkowego
-          różnego rodzaju powierzchni. Nasi specjaliści są gotowi omówić
-          z Państwem indywidualne warunki cenowe, pomóc w organizacji dostawy
-          wyrobów oraz udzielić właściwych zaleceń w zakresie doboru koloru
-          i sposobu przygotowania wyrobu do malowania proszkowego.
+          Firma <span class="company">Mikol</span> świadczy usługi malowania proszkowego różnego rodzaju powierzchni,
+           piaskowania, cięcia plazmowego oraz prace spawalnicze. Jeżeli jest to usługa 
+           wyjazdowa, oferujemy darmową dostawę dla wszystkich naszych klientów. Oznacza to, 
+           że klient po prostu do nas dzwoni i w dogodnym dla niego czasie, nasz zespół 
+           przyjeżdża i sam odbiera części, a także przywozi im gotowe materiały, 
+           ponownie w dogodnym dla Państwa czasie.
+           Postaramy się spełnić wszystkie Państwa życzenia najlepiej jak potrafimy.
         </p>
-        <img src="./images/o_nas.jpg" alt="" width="288" height="132" />
+        <img src="./images/delivery.jpg" alt="" width="516" height="460" />
       </section>
       <!-- Реклама, рекламний банер і використов тег <article></article> -->
 
@@ -224,13 +250,16 @@ od 280 zl / m²
       <!--Futer cont.in-->
       <div>
         <a href="./index.html">
-          <img src="./images/logo1.svg" alt="logo" />
+          <img src="./images/logo.png"
+          width="148"
+          height="148"
+          alt="logo" />
         </a>
         <nav>
-          <ul class="site-nav">
-            <li><a href="#usługi" class="link"> Usługi </a></li>
-            <li><a href="#o_nas" class="link"> O nas </a></li>
-            <li><a href="#kontakt" class="link"> Kontakt </a></li>
+          <ul class="nav">
+            <li><a href="#usługi" class="nav-link"> Usługi </a></li>
+            <li><a href="#o_nas" class="nav-link"> O nas </a></li>
+            <li><a href="#kontakt" class="nav-link"> Kontakt </a></li>
           </ul>
         </nav>
       </div>
@@ -245,16 +274,17 @@ od 280 zl / m²
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div>
-        <h2 id="kontakt" class="section-title">Kontakt do nas</h2>
+      <div class="contacts">
+        <h2 id="kontakt" class="">Kontakt do nas</h2>
         <address>
           <a href="tel:+48662056715">+48 662 056 715</a><br />
           <a href="tel:+48789837595">+48 789 837 595</a><br />
           <a href="mailto:email@gmail.com">email@gmail.com</a><br />
-          ul. Półwiejska 45, 60-456, Tychy<br />
-          Pn-Pt: 8:00 — 17:00<br />
-          Sb: 8:00 — 16:00<br />
-          Niedziela — zamknięte
+         <p> ul. Półwiejska 45, 60-456, Tychy<br />
+          Pn-Pt: 8:00 — 17:00<br />
+          Sb: 8:00 — 16:00<br />
+          Niedziela — zamknięte 
+         </p>
         </address>
       </div>
     </footer>
